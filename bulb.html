@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Bulb project
+	</title>
+	<style>
+		body{
+			background-color:black;
+		}
+		.center {
+ 			display: block;
+ 			 margin-left: auto;
+ 			 margin-right: auto;
+  			width: 30%;
+		}
+		.btn{
+			width:10%;
+			padding: 01%;
+			background-color: lightyellow;
+		}
+	</style>
+</head>
+<body>
+	<img id="bulb" class="center" src="1.jpeg" alt="fuck off">
+	<br>
+	<button type="button" id="btn" class="center btn" >Turn on</button>
+	
+	<script>
+		let btn=document.getElementById("btn");
+		let bulb=document.getElementById("bulb");
+		btn.addEventListener('click',change);
+		function change(e)
+		{
+			if(btn.textContent.includes("on"))
+			{
+				bulb.src="2.jpeg";
+				btn.textContent="Turn off";
+			}
+			else
+			{
+				bulb.src="1.jpeg";
+				btn.textContent="Turn on";
+			}
+		}
+	</script>
+	
+</body>
+</html>

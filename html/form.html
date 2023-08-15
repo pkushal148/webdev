@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+payment form sbi
+</title>
+</head>
+<body>
+	<form action="">     <!--action for linking in the server -->
+	<h1>  Payment form </h1>
+	<p> Required fields are marked by * </p>
+	<fieldset>
+		<legend> <h2> Personal Details </h2>  </legend>
+		<p> Name: * <input type="text" name="name" required> </p>
+		<p>
+			Male <input type="radio" name="gender" id="gender" required>
+			Female <input type="radio" name="gender" id="gender" required>
+		</p>
+		<p>
+		 Address:<textarea name="address" id="address" cols="80" rows="8" ></textarea>
+		</p>
+		<p>
+		 email: *<input type="email" name="email" id="email" required>		
+		</p> 
+		<p> Pincode: *<input type="number" name="pincode" id="pincode" required> </p>
+	</fieldset>
+	<fieldset>
+		<legend> <h2>Payment details </h2> </legend>
+		<p>
+			Cardtype: * 
+			<select name="card" id="card" required>
+				<option value="">--select a card--</option>
+				<option value="visa"> Visa </option>
+				<option value="master"> MASTER </option>
+				<option value="rupay"> RUPAY </option>
+				<option value="upi"> UPI </option>
+			</select>
+		</p>
+		<p> Cardnumber: *<input type="number" name="number" id="number"  required></p>
+		<p>
+			Expiry date: *<input type="date" name="exp" id="exp" required >
+		</p>
+		<p>
+			CVV : *<input type="password" name="cvv" id="cvv" required>
+		</p>
+		<p>
+			Total amount: * 
+			<input type="text" name="money" id="money" required>
+		</p>
+		<p>
+			<input type="submit" value="PAY NOW!">	
+		
+		</p>
+	</fieldset>
+	</form>
+</body>
+</html>

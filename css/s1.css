@@ -1,0 +1,53 @@
+/*	elements in css
+
+p{
+	color:green;
+}
+a{
+	color:red;
+}
+li{
+	list-style-type:square;
+	color:blue;
+}
+*/
+
+/*    class and id
+.extra{
+	color: RED;
+	font-weight: bold;
+	font-size: 200%;
+}
+span.extra{
+	color: violet;
+	font-size: 100%;
+}
+.waste{
+	color: pink;
+}
+a{
+	color:yellow;
+}
+a:hover{
+	color:green;
+}
+h2+p .extra{
+	color:yellow;
+	background-color:black;
+}
+
+p #one
+{
+	color: green;
+	background-color:black;
+}
+
+*/
+li[class="extra"]{
+	color:red;
+}
+*{
+	color:"red";
+	background-color:black;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		DOM manipulation
+	</title>
+	
+</head>
+<body>
+	<h1>Dom Manipulation</h1>
+	
+	<ul id="ex1" data="valid">
+		<li class="item"> first  </li>
+		<li class="item"> second</li>
+		<li class="item"> third</li>
+		
+	</ul>
+	
+	<table>
+		<tr>
+			<td>one</td>
+			<td>two</td>
+		</tr>
+		<tr>
+			<td>three</td>
+			<td>four</td>
+		</tr>
+		
+	</table>
+	<button id="click" onclick=alert("namaste")>click Me</button>
+	
+	<script>
+		// first 
+		// console.log(document.documentElement);
+	 	// console.log(document.head);
+	 	//console.log(document.body);
+	 	//console.log(document.body.childNodes);
+	 	//console.log(document.body.children);
+	 	//console.log(document.body.firstChild);
+	 	//console.log(document.body.firstElementChild);
+	 	//console.log(document.body.lastChild);
+	 	//console.log(document.body.lastElementChild);
+	 	//for(node of document.body.children)
+	 	//{
+	 	//	console.log(node);
+	 	//}
+	 	
+	 	/*const Cob=Array.from(documnet.body.children);
+	 	console.log(Cob);    //not obtained
+	 	*/
+	 	
+	 	//console.log(document.body.children[1]);
+	 	//const c=document.body.children[1];
+	 	//console.log(c.previousElementSibling);
+	 	//console.log(c.nextElementSibling);
+	 	//const first=c.children[0];
+	 	//const second=c.children[1];
+	 	//console.log(first.innerText);
+	 	//console.log(second.nextElementSibling);
+	 	
+	 	
+	 	//second for tables
+	 	//const tablet=document.body.children[2];
+	 	//console.log(tablet.rows[0].cells[0].innerText);
+	 	
+	 	
+	 	//third for classes ids  
+	 	
+	 	//console.log(ex1);
+	 	//ex1.style.background='lightblue';
+	 	//ex1.style.color="brown";
+	 	
+	 	//const ult=document.getElementById("ex1");
+	 	//ult.style.margin="20px";
+	 	//ult.style.padding="25px";
+	 	
+	 	//const list=document.getElementsByClassName("item");
+	 	//console.log(list[0]);
+	 	
+	 	//const list=document.querySelectorAll(".item");
+	 	//console.log(list[2]);
+	 	
+	 	//onst elem=ex1.getAttribute('data');
+	 	//console.log(elem);
+	 	//ex1.setAttribute('order','pending');
+	 	//const elem=ex1.getAttribute('order');
+	 	//console.log(elem);
+	 	//console.log(ex1.hasAttribute('data'));
+	 	
+	 	//fourth
+	 	//const newd=document.createElement('div');
+	 	//document.body.append(newd);
+	 	//const newt=document.createTextNode("namaste india");
+	 	//newd.append(newt);
+	 	//document.body.append(newd);
+	 	//document.body.prepend(newd);
+	 	//newd.remove();
+	 	
+	 	
+	 	//fifth
+	 	click. onclick=function(){
+			alert("do genskill");
+		}
+		
+		function call()
+		{
+			alert("fastly");
+		}
+		click. onclick=call;
+	 	
+	</script>
+</body>
+</html>

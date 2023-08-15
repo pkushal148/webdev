@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		payment form sbi
+	</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<form action="">     <!--action for linking in the server -->
+	<div class="class1">
+	<h1 class="head">  Payment form </h1>
+	<hr>
+	<p> Required fields are marked by * </p>
+	<fieldset>
+		<legend> <h2> Personal Details </h2>  </legend>
+		<p> Name: * <input type="text" name="name" required placeholder="virat kohli"> </p>
+		<p>
+			Male <input type="radio" name="gender" id="gender" required placeholder="*">
+			Female <input type="radio" name="gender" id="gender" required>
+		</p>
+		<p>
+		 Address:<textarea name="address" id="address" cols="80" rows="8" placeholder="enter the address"></textarea>
+		</p>
+		<p> Pincode: *<input type="number" name="pincode" id="pincode" required placeholder="456445"> </p>
+		<p>
+			email:* <input type="email" name="email" id="email" required placeholder="xyz@gmail.com">
+		</p>
+		
+	</fieldset>
+	<fieldset>
+		<legend> <h2>Payment details </h2> </legend>
+		<p>
+			Cardtype: * 
+			<select name="card" id="card" required>
+				<option value="">--select a card--</option>
+				<option value="visa"> Visa </option>
+				<option value="master"> MASTER </option>
+				<option value="rupay"> RUPAY </option>
+				<option value="upi"> UPI </option>
+			</select>
+		</p>
+		<p> Cardnumber: *<input type="number" name="number" id="number"  required placeholder="4564 5567 4444"></p>
+		<p>
+			Expiry date: *<input type="date" name="exp" id="exp" required placeholder="mm-yy" >
+		</p>
+		<p>
+			CVV : *<input type="password" name="cvv" id="cvv" required placeholder="456">
+		</p>
+		<p>
+			Total amount: * 
+			<input type="text" name="money" id="money" required placeholder="10000000">
+		</p>
+		<p>
+			<input type="submit" value="PAY NOW!">	
+		
+		</p>
+	</fieldset>
+	</form>
+	</div>
+</body>
+</html>
